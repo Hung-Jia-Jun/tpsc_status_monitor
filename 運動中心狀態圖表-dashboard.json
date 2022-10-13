@@ -1,0 +1,1897 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": {
+          "type": "grafana",
+          "uid": "-- Grafana --"
+        },
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "target": {
+          "limit": 100,
+          "matchAny": false,
+          "tags": [],
+          "type": "dashboard"
+        },
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "id": 1,
+  "links": [],
+  "liveNow": false,
+  "panels": [
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "d4iEKWSVk"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"BTSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'gymMaxPeopleNum'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "健身房最大容留人數"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"BTSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'gymPeopleNum'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "目前健身房人數"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"BTSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'swMaxPeopleNum'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "游泳池最大容留人數"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"BTSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'swPeopleNum'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "游泳池目前人數"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"BTSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'gymCapacityPercentage'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "健身房容量比"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"BTSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'swCapacityPercentage'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "游泳池容量比"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 12,
+        "x": 0,
+        "y": 0
+      },
+      "id": 33,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "9.1.7",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "d4iEKWSVk"
+          },
+          "editorMode": "builder",
+          "exemplar": false,
+          "expr": "BTSC",
+          "legendFormat": "__auto",
+          "range": true,
+          "refId": "A"
+        }
+      ],
+      "title": "北投運動中心",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "d4iEKWSVk"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"DASC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'gymMaxPeopleNum'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "健身房最大容留人數"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"DASC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'gymPeopleNum'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "目前健身房人數"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"DASC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'swMaxPeopleNum'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "游泳池最大容留人數"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"DASC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'swPeopleNum'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "游泳池目前人數"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"DASC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'gymCapacityPercentage'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "健身房容量比"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"DASC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'swCapacityPercentage'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "游泳池容量比"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 12,
+        "x": 12,
+        "y": 0
+      },
+      "id": 34,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "9.1.7",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "d4iEKWSVk"
+          },
+          "editorMode": "builder",
+          "exemplar": false,
+          "expr": "DASC",
+          "legendFormat": "__auto",
+          "range": true,
+          "refId": "A"
+        }
+      ],
+      "title": "大安運動中心",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "d4iEKWSVk"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"DTSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'gymMaxPeopleNum'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "健身房最大容留人數"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"DTSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'gymPeopleNum'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "目前健身房人數"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"DTSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'swMaxPeopleNum'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "游泳池最大容留人數"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"DTSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'swPeopleNum'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "目前游泳池人數"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"DTSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'gymCapacityPercentage'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "健身房容量比"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"DTSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'swCapacityPercentage'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "游泳池容量比"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 12,
+        "x": 0,
+        "y": 3
+      },
+      "id": 25,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "9.1.7",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "d4iEKWSVk"
+          },
+          "editorMode": "builder",
+          "exemplar": false,
+          "expr": "DTSC",
+          "legendFormat": "__auto",
+          "range": true,
+          "refId": "A"
+        }
+      ],
+      "title": "大同運動中心",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "d4iEKWSVk"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"JJSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'gymMaxPeopleNum'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "健身房最大容留人數"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"JJSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'gymPeopleNum'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "目前健身房人數"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"JJSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'swMaxPeopleNum'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "游泳池最大容留人數"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"JJSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'swPeopleNum'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "目前游泳池人數"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"JJSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'gymCapacityPercentage'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "健身房容量比"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"JJSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'swCapacityPercentage'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "游泳池容量比"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 12,
+        "x": 12,
+        "y": 3
+      },
+      "id": 23,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "9.1.7",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "d4iEKWSVk"
+          },
+          "editorMode": "builder",
+          "exemplar": false,
+          "expr": "JJSC",
+          "legendFormat": "__auto",
+          "range": true,
+          "refId": "A"
+        }
+      ],
+      "title": "中正運動中心",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "d4iEKWSVk"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"NGSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'gymMaxPeopleNum'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "健身房最大容留人數"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"NGSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'gymPeopleNum'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "目前健身房人數"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"NGSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'swMaxPeopleNum'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "游泳池最大容留人數"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"NGSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'swPeopleNum'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "目前游泳池人數"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"NGSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'gymCapacityPercentage'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "健身房容量比"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"NGSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'swCapacityPercentage'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "游泳池容量比"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 12,
+        "x": 0,
+        "y": 6
+      },
+      "id": 27,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "9.1.7",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "d4iEKWSVk"
+          },
+          "editorMode": "builder",
+          "exemplar": false,
+          "expr": "NGSC",
+          "legendFormat": "__auto",
+          "range": true,
+          "refId": "A"
+        }
+      ],
+      "title": "南港運動中心",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "d4iEKWSVk"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"NHSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'gymMaxPeopleNum'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "健身房最大容留人數"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"NHSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'gymPeopleNum'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "目前健身房人數"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"NHSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'swMaxPeopleNum'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "游泳池最大容留人數"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"NHSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'swPeopleNum'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "游泳池目前人數"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"NHSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'gymCapacityPercentage'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "健身房容量比"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"NHSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'swCapacityPercentage'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "游泳池容量比"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 12,
+        "x": 12,
+        "y": 6
+      },
+      "id": 28,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "9.1.7",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "d4iEKWSVk"
+          },
+          "editorMode": "builder",
+          "exemplar": false,
+          "expr": "NHSC",
+          "legendFormat": "__auto",
+          "range": true,
+          "refId": "A"
+        }
+      ],
+      "title": "內湖運動中心",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "d4iEKWSVk"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"SLSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'gymMaxPeopleNum'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "健身房最大容留人數"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"SLSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'gymPeopleNum'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "目前健身房人數"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"SLSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'swMaxPeopleNum'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "游泳池最大容留人數"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"SLSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'swPeopleNum'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "目前游泳池人數"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"SLSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'gymCapacityPercentage'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "健身房容量比"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"SLSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'swCapacityPercentage'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "游泳池容量比"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 12,
+        "x": 0,
+        "y": 9
+      },
+      "id": 29,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "9.1.7",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "d4iEKWSVk"
+          },
+          "editorMode": "builder",
+          "exemplar": false,
+          "expr": "SLSC",
+          "legendFormat": "__auto",
+          "range": true,
+          "refId": "A"
+        }
+      ],
+      "title": "士林運動中心",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "d4iEKWSVk"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"SSSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'gymMaxPeopleNum'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "健身房最大容留人數"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"SSSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'gymPeopleNum'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "目前健身房人數"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"SSSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'swMaxPeopleNum'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "游泳池最大容留人數"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"SSSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'swPeopleNum'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "游泳池目前人數"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"SSSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'gymCapacityPercentage'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "健身房容量比"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"SSSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'swCapacityPercentage'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "游泳池容量比"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 12,
+        "x": 12,
+        "y": 9
+      },
+      "id": 30,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "9.1.7",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "d4iEKWSVk"
+          },
+          "editorMode": "builder",
+          "exemplar": false,
+          "expr": "SSSC",
+          "legendFormat": "__auto",
+          "range": true,
+          "refId": "A"
+        }
+      ],
+      "title": "松山運動中心",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "d4iEKWSVk"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"WHSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'gymMaxPeopleNum'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "健身房最大容留人數"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"WHSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'gymPeopleNum'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "目前健身房人數"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"WHSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'swMaxPeopleNum'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "游泳池最大容留人數"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"WHSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'swPeopleNum'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "游泳池目前人數"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"WHSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'gymCapacityPercentage'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "健身房容量比"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"WHSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'swCapacityPercentage'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "游泳池容量比"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 12,
+        "x": 0,
+        "y": 12
+      },
+      "id": 31,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "9.1.7",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "d4iEKWSVk"
+          },
+          "editorMode": "builder",
+          "exemplar": false,
+          "expr": "WHSC",
+          "legendFormat": "__auto",
+          "range": true,
+          "refId": "A"
+        }
+      ],
+      "title": "萬華運動中心",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "d4iEKWSVk"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"WSSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'gymMaxPeopleNum'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "健身房最大容留人數"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"WSSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'gymPeopleNum'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "目前健身房人數"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"WSSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'swMaxPeopleNum'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "游泳池最大容留人數"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"WSSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'swPeopleNum'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "游泳池目前人數"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"WSSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'gymCapacityPercentage'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "健身房容量比"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"WSSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'swCapacityPercentage'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "游泳池容量比"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 12,
+        "x": 12,
+        "y": 12
+      },
+      "id": 32,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "9.1.7",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "d4iEKWSVk"
+          },
+          "editorMode": "builder",
+          "exemplar": false,
+          "expr": "WSSC",
+          "legendFormat": "__auto",
+          "range": true,
+          "refId": "A"
+        }
+      ],
+      "title": "文山運動中心",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "d4iEKWSVk"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"ZSSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'gymMaxPeopleNum'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "健身房最大容留人數"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"ZSSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'gymPeopleNum'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "目前健身房人數"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"ZSSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'swMaxPeopleNum'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "游泳池最大容留人數"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"ZSSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'swPeopleNum'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "游泳池目前人數"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"ZSSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'gymCapacityPercentage'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "健身房容量比"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"ZSSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'swCapacityPercentage'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "游泳池容量比"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 3,
+        "w": 12,
+        "x": 0,
+        "y": 15
+      },
+      "id": 22,
+      "options": {
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "textMode": "auto"
+      },
+      "pluginVersion": "9.1.7",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "d4iEKWSVk"
+          },
+          "editorMode": "builder",
+          "exemplar": false,
+          "expr": "ZSSC",
+          "legendFormat": "__auto",
+          "range": true,
+          "refId": "A"
+        }
+      ],
+      "title": "中山運動中心",
+      "type": "stat"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "d4iEKWSVk"
+      },
+      "description": "該比率是由（目前健身房人數/最大容留人數）x 100%而得出",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"BTSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'gymCapacityPercentage'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "北投"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"DASC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'gymCapacityPercentage'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "大安"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"DTSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'gymCapacityPercentage'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "大同"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"JJSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'gymCapacityPercentage'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "中正"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"NGSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'gymCapacityPercentage'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "南港"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"NHSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'gymCapacityPercentage'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "內湖"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"SLSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'gymCapacityPercentage'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "士林"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"SSSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'gymCapacityPercentage'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "松山"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"WHSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'gymCapacityPercentage'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "萬華"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"WSSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'gymCapacityPercentage'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "文山"
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "{__name__=\"ZSSC\", instance=\"metricesHost:8000\", job=\"getRealTimeGymAndSwStatus\", label=\"{'label': 'gymCapacityPercentage'}\"}"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "中山"
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 12,
+        "x": 12,
+        "y": 15
+      },
+      "id": 36,
+      "options": {
+        "displayMode": "gradient",
+        "minVizHeight": 10,
+        "minVizWidth": 0,
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showUnfilled": true
+      },
+      "pluginVersion": "9.1.7",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "d4iEKWSVk"
+          },
+          "editorMode": "builder",
+          "expr": "BTSC{label=\"{'label': 'gymCapacityPercentage'}\"}",
+          "legendFormat": "__auto",
+          "range": true,
+          "refId": "北投"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "d4iEKWSVk"
+          },
+          "editorMode": "builder",
+          "expr": "DASC{label=\"{'label': 'gymCapacityPercentage'}\"}",
+          "hide": false,
+          "legendFormat": "__auto",
+          "range": true,
+          "refId": "B"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "d4iEKWSVk"
+          },
+          "editorMode": "builder",
+          "expr": "DTSC{label=\"{'label': 'gymCapacityPercentage'}\"}",
+          "hide": false,
+          "legendFormat": "__auto",
+          "range": true,
+          "refId": "C"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "d4iEKWSVk"
+          },
+          "editorMode": "builder",
+          "expr": "JJSC{label=\"{'label': 'gymCapacityPercentage'}\"}",
+          "hide": false,
+          "legendFormat": "__auto",
+          "range": true,
+          "refId": "D"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "d4iEKWSVk"
+          },
+          "editorMode": "builder",
+          "expr": "NGSC{label=\"{'label': 'gymCapacityPercentage'}\"}",
+          "hide": false,
+          "legendFormat": "__auto",
+          "range": true,
+          "refId": "E"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "d4iEKWSVk"
+          },
+          "editorMode": "builder",
+          "expr": "NHSC{label=\"{'label': 'gymCapacityPercentage'}\"}",
+          "hide": false,
+          "legendFormat": "__auto",
+          "range": true,
+          "refId": "F"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "d4iEKWSVk"
+          },
+          "editorMode": "builder",
+          "expr": "SLSC{label=\"{'label': 'gymCapacityPercentage'}\"}",
+          "hide": false,
+          "legendFormat": "__auto",
+          "range": true,
+          "refId": "G"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "d4iEKWSVk"
+          },
+          "editorMode": "builder",
+          "expr": "SSSC{label=\"{'label': 'gymCapacityPercentage'}\"}",
+          "hide": false,
+          "legendFormat": "__auto",
+          "range": true,
+          "refId": "H"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "d4iEKWSVk"
+          },
+          "editorMode": "builder",
+          "expr": "WHSC{label=\"{'label': 'gymCapacityPercentage'}\"}",
+          "hide": false,
+          "legendFormat": "__auto",
+          "range": true,
+          "refId": "I"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "d4iEKWSVk"
+          },
+          "editorMode": "builder",
+          "expr": "WSSC{label=\"{'label': 'gymCapacityPercentage'}\"}",
+          "hide": false,
+          "legendFormat": "__auto",
+          "range": true,
+          "refId": "J"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "d4iEKWSVk"
+          },
+          "editorMode": "builder",
+          "expr": "ZSSC{label=\"{'label': 'gymCapacityPercentage'}\"}",
+          "hide": false,
+          "legendFormat": "__auto",
+          "range": true,
+          "refId": "K"
+        }
+      ],
+      "title": "健身房目前使用人數比例圖",
+      "type": "bargauge"
+    }
+  ],
+  "refresh": false,
+  "schemaVersion": 37,
+  "style": "dark",
+  "tags": [],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now-24h",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "",
+  "title": "運動中心狀態圖表",
+  "uid": "h9t8cWS4k",
+  "version": 12,
+  "weekStart": ""
+}
