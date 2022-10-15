@@ -6,7 +6,7 @@
 
 * [Grafana 儀表板（需登入）](https://tpscgrafana-isgde2b5lq-uw.a.run.app/d/h9t8cWS4k/tai-bei-shi-yun-dong-zhong-xin-zhuang-tai-tu-biao?orgId=1&from=now-1h&to=now)
 
-* [Grafana 監控儀表板（快照）](https://tpscgrafana-isgde2b5lq-uw.a.run.app/dashboard/snapshot/jyAzSzYeUTI0hE4fPRvP6ykid9Fs6kkK?orgId=1)
+* [Grafana 監控儀表板（快照）](https://hungjiajun.grafana.net/dashboard/snapshot/BIuvu2WrILl3b6xca7uKq5cg5z72Vs24?orgId=1&from=now-30m&to=now)
 ---
 ### Grafana DataSource setting
 Local
