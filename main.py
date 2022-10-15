@@ -5,7 +5,7 @@ from prometheus_client import Counter, generate_latest,Gauge,CollectorRegistry
 import requests
 import json
 
-app = Flask(__name__)
+# app = Flask(__name__)
 
 def GetNowPeopleNum():
 
@@ -37,11 +37,12 @@ def GetNowPeopleNum():
         )
     return json_body
 
-@app.route('/')
-def healthCheck():
+# @app.route('/')
+def healthCheck(request):
     return "OK"
-@app.route('/metrics')
-def metrics():
+
+# @app.route('/metrics')
+def metrics(request):
     lidStatus = GetNowPeopleNum()
     registry = CollectorRegistry()
     for rsp in lidStatus:
@@ -64,5 +65,5 @@ def metrics():
     return Response(generate_latest(registry), mimetype='text/plain')
 
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8000)
+# if __name__ == '__main__':
+#     app.run(host='0.0.0.0', port=8000)

@@ -6,7 +6,7 @@ services:
     volumes:
       - ${PWD}:/home
     command:
-      - '--config.file=/home/prometheus_config.yml'
+      - '--config.file=/home/prometheus.yml'
     ports: 
       - 9090:9090
     extra_hosts:
