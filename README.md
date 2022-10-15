@@ -3,9 +3,12 @@
 
 ### 服務位置
 * [Prometheus](https://tpscprom-isgde2b5lq-uw.a.run.app/)
-* [Grafana 監控儀表板（快照）](https://tpscgrafana-isgde2b5lq-uw.a.run.app/dashboard/snapshot/jyAzSzYeUTI0hE4fPRvP6ykid9Fs6kkK?orgId=1)
-* [Grafana 儀表板（需登入）](https://tpscgrafana-isgde2b5lq-uw.a.run.app/d/h9t8cWS4k/tai-bei-shi-yun-dong-zhong-xin-zhuang-tai-tu-biao?orgId=1&from=now-1h&to=now)
+* [Grafana 監控儀表板（快照）](https://hungjiajun.grafana.net/dashboard/snapshot/BIuvu2WrILl3b6xca7uKq5cg5z72Vs24?orgId=1&from=1665822186333&to=1665824052576)
 
+* [Grafana 儀表板（需登入）](https://tpscgrafana-isgde2b5lq-uw.a.run.app/d/h9t8cWS4k/tai-bei-shi-yun-dong-zhong-xin-zhuang-tai-tu-biao?orgId=1&from=now-1h&to=now)
+	* 備註：
+		* 此Cloud Run 開的版本是隨需求啟動的，過一段時間就會關閉並清空數據，所以 『Grafana 儀表板』登入後沒有任何東西是正常的
+		* ![](https://github.com/Hung-Jia-Jun/tpsc_status_monitor/blob/master/%E6%88%AA%E5%9C%96%202022-10-16%20%E4%B8%8A%E5%8D%8812.59.55.png?raw=true)
 
 ---
 ### Grafana DataSource setting
